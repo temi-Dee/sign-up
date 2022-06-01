@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+}
+
+p {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#txt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    height: 20vh;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    color: black;
+    padding: 50px 0;
+    margin: 20px 0;
+}
+
+.slt {
+    font-size: 16px;
+}
+
+#btn {
+    /*height: 38px;
+    */
+    cursor: pointer;
+    background: #e8491d;
+    border: none;
+    padding: 10px 27px;
+    /*margin: 50px 15px;
+    */
+    color: #ffffff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+
+/* header**/
+
+header {
+    background-color: #cccccc;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    padding: 0 5px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 20px 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    padding-top: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    /* margin-top: 10px; */
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+    header #branding header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 50px;
+    }
+    #newsletter .button-1 .quote .button-1 {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

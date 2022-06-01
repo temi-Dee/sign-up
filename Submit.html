@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segunolapade.com</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+
+        <div id="branding">
+            <h1> <span>E</span>-coli RNA sequence</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="Submit.html">Submit</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container">
+
+        <div id="txt">
+            <h1 class="banner-text">Here are the E-coli sequences in FASTA</h1>
+            <textarea placeholder="Message" class="txtbx"></textarea>
+        </div>
+
+        <div class="dropdown">
+            <form>
+                <label class="slt">select PUS</label>
+                <select>
+                <option value="(D)">(D)</option>
+              <option value="(cmo5U)">(cmo5U)</option>
+              <option value="(Y)">(Y)</option>
+              <option value="(m7G)">(m7G)</option>
+              <option value="(t6A)">(t6A)</option>
+              <option value="(acp3U)">(acp3U)</option>
+              <option value="(s4U)">(s4U)</option>
+              <option value="(s2C)">(s2C)</option>
+              <option value="(I)">(I)</option>
+              <option value="(m2A)">(m2A)</option>
+              <option value="(5IIU)">(5IIU)</option>
+              <option value="(Q)">(Q)</option>
+              <option value="(gluQ)">(gluQ)</option>
+              <option value="(Gm)">(Gm)</option>
+              <option value="(Um)">(Um)</option>
+              <option value="(mnm5s2U)">(mnm5s2U)</option>
+              <option value="(m2,2G)">(m2,2G)</option>
+              <option value="(m5C)">(m5C)</option>
+              <option value="(k2C)">(k2C)</option>
+              <option value="(m6A)">(m6A)</option>
+              <option value="(mIA)">(mIA)</option>
+              <option value="(xG)">(xG)</option>
+              <option value="(ac4C)">(ac4C)</option>
+              <option value="(m6t6A)">(m6t6A)</option>
+              <option value="(i6A)">(i6A)</option>
+              <option value="(m2G)">(m2G)</option>
+            </select>
+
+            </form>
+        </div>
+
+        <button id="btn" type="submit" onclick="display('user')">Submit</button>
+    </div>
+    <script type="text/javascript">
+        function display() {
+            var name = document.getElementById("btn").value;
+
+            alert(" press ok to submit ");
+
+
+        }
+    </script>
+</body>
+
+
+</html>
