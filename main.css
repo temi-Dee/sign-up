@@ -15,7 +15,7 @@ body {
     padding: 0 10px;
 }
 
-h1 {
+.logo {
     text-align: center;
     padding: 20px 0;
     font-size: 26px;
@@ -38,6 +38,8 @@ p {
 }
 
 textarea {
+    display: flex;
+    justify-content: center;
     resize: none;
     padding: 5px;
     height: 20vh;
@@ -49,6 +51,8 @@ textarea {
     color: black;
     padding: 50px 0;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .slt {
@@ -56,20 +60,12 @@ textarea {
 }
 
 #btn {
-    /*height: 38px;
-    */
     cursor: pointer;
     background: #e8491d;
     border: none;
     padding: 10px 27px;
-    /*margin: 50px 15px;
-    */
     color: #ffffff;
     border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
 }
 
 
@@ -77,7 +73,10 @@ textarea {
 
 header {
     background-color: #cccccc;
-    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* min-height: 70px; */
     border-bottom: #e8491d 3px solid;
     padding: 0 5px;
 }
@@ -90,17 +89,7 @@ header a {
 }
 
 header li {
-    float: left;
-    display: inline;
     padding: 20px 20px;
-}
-
-header #branding {
-    float: left;
-}
-
-header #branding h1 {
-    padding-top: 20px;
 }
 
 header nav {
@@ -123,29 +112,4 @@ header a:hover {
 
 /* media queries */
 
-@media (max-width: 768px) {
-    header #branding header nav,
-    header nav li,
-    #newsletter h1,
-    #newsletter form #boxes .box,
-    article#main-col,
-    aside#sidebar {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-    header {
-        padding-bottom: 20px;
-    }
-    #showcase h1 {
-        margin-top: 50px;
-    }
-    #newsletter .button-1 .quote .button-1 {
-        display: block;
-        width: 100%;
-    }
-    #newsletter form input[type="email"] {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-}
+@media screen and (max-width: 768px) {}
