@@ -1,11 +1,7 @@
-functionAddNew() {
-    const firstname = document.getElementById("fname").value;
-    const lastname = document.getElementById("lname").value
+function display() {
+    var name = document.getElementById("btn").value;
 
-    const fullname = ("firstname" + " " + "lastname");
-    const user = [];
-    console.log(fullname);
+    alert(" press ok to submit ");
+
 
 }
-
-console.log(functionAddNew);
